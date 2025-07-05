@@ -2,7 +2,7 @@
 签子数量识别
 
 数据集下载：https://pan.xunlei.com/s/VOUQ_xyXFiKwvYcxFrNPGNx0A1?pwd=spds#  
-show_label.py文件用于显示已标注的图片
+show_label.py文件用于显示已标注的图片  
 训练完成后，会生成runs文件夹，runs\detect\train\weights\best.pt是训练好的模型文件
 
 效果如下：  
