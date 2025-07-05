@@ -1,0 +1,29 @@
+path: ./skewer
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: skewer
+
+anchors: 3
+close_mosaic: 15
+
+augment:
+  # 颜色空间增强
+  hsv_h: 0.015 # 色调
+  hsv_s: 0.7 # 饱和度
+  hsv_v: 0.4 # 亮度
+
+  # 几何变换
+  degrees: 5 # 旋转
+  scale: 0.3 # 缩放
+  shear: 1.5 # 剪切
+
+  # 翻转变化
+  flipud: 0.0 # 上下翻转
+  fliplr: 0.0 # 左右翻转
+
+  # 小物体专用增强
+  perspective: 0.0005 # 轻微透视变化
+  paste_in: 0.0 # 禁用贴图增强
